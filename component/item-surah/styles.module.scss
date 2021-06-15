@@ -1,0 +1,39 @@
+
+.cardMenu {
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  cursor: pointer;
+  h4 {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+}
+
+.infoSurah {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  .noSurah {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: var(--line-color);
+    color: var(--text-color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: smaller;
+    padding: 4px;
+  }
+}
+
+.surahName {
+  font-size: 20px;
+  margin-bottom: 0 !important;
+}
