@@ -1,7 +1,8 @@
 import React from 'react';
-import { useRouter } from 'next/router'
+import Image from 'next/image';
+import { useRouter } from 'next/router';
 
-import CardMenu from '../component/item-surah';
+import ItemSurah from '../component/item-surah';
 import listSurah from '../data/surah-info';
 
 export default function Home() {
@@ -9,9 +10,13 @@ export default function Home() {
 
   return (
     <div className="page-content">
+      <div className="page-content--header">
+        <Image src="/images/alquran.png" alt="al-quran text" width={100} height={100}  />
+      </div>
       {
         listSurah.map((surah) => (
-          <CardMenu 
+          <ItemSurah 
+            key={surah.surah_no}
             title={surah.name_arabic} 
             subtitle={surah.name_latin} 
             totalAyah={surah.ayah_count} 

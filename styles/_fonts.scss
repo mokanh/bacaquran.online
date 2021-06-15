@@ -1,6 +1,11 @@
 @font-face {
   font-family: "ArabicUthmani";
-  src: url("/public/fonts/Uthmani.otf");
-  font-style: normal;
-  font-weight: 400;
+  src: url("/fonts/Uthmani.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "arabic";
+  src: url("/fonts/arabic.otf") format("opentype");
+  font-display: swap;
 }
