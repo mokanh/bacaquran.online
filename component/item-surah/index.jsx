@@ -3,12 +3,14 @@ import PropTypes from 'prop-types';
 
 import style from './styles.module.scss';
 
+import {arabicNumber} from '../../utils';
+
 export default function CardMenu({title, totalAyah, index, subtitle, onClick }) {
   return (
     <div className={style.cardMenu} onClick={onClick}>
       <div className={style.infoSurah}>
         <div className={style.noSurah}>
-          {index}
+          {arabicNumber(index)}
         </div>
         <div className={style.itemSurahDetail}>
           <h4>{subtitle}</h4>

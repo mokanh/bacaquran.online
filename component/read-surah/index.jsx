@@ -8,7 +8,7 @@ export default function ReadSurah({data}) {
     <div className={css.readSurahTxt}>
       {
         Object.keys(verses)
-        .map(key => (
+        .map((key) => (
           <div className={`arabic ${css.lineVerse}`}>{verses[key]}</div>
         ))
       }
